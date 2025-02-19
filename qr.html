@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator - Dark Theme</title>
+    
+    <link rel="stylesheet" type="text/css" href="qr.css">
+
+    <script src="qr.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <div class="input-group">
+            <label for="qr-name">QR Code Name</label>
+            <input type="text" id="qr-name" placeholder="Enter a name for your QR code">
+        </div>
+        <div class="input-group">
+            <label for="qr-text">QR Code Content</label>
+            <input type="text" id="qr-text" placeholder="Enter text or URL for QR code">
+        </div>
+        <button id="generate-btn">Generate QR Code</button>
+        <div id="error" class="error-message"></div>
+        <div class="qr-container" id="qr-container" style="display: none;">
+            <h3 id="qr-title"></h3>
+            <div id="qrcode"></div>
+            <button id="download-btn" class="download-btn">Download QR Code</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+</body>
+</html>
